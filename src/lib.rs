@@ -15,7 +15,7 @@ fn is_a_tty(stream: Stream) -> bool {
     }
 }
 
-/// Returns true if `stream` is a TTY or the current terminal
+/// Returns true if `stream` is piped or if the current terminal
 /// [supports_unicode].
 pub fn on(stream: Stream) -> bool {
     if !is_a_tty(stream) {
